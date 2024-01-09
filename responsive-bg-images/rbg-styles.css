@@ -1,0 +1,13 @@
+/* Kael Spencer
+1/9/24
+responsive back ground */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("myself.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
