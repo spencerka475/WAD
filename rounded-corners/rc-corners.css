@@ -1,0 +1,33 @@
+/* Kael s
+1/17/24
+responsive corners */
+
+.container {
+	display: grid;
+	width: 90vw; /* Grid container will span 90% of the width of the viewport */
+	/* Center the container DIV horizontally across the page */
+	margin: 0 auto;
+	/* You can only use the new fr (fractional) unit with CSS Grid */
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	/* Center the buttons horizontally in the container DIV */
+	justify-content: center;
+}
+
+
+.button {
+    background-color: #4c93de;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(236, 77, 25);
+}

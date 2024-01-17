@@ -1,0 +1,11 @@
+/* Kael Spencer
+1/12/24
+responsive iamges */
+
+
+
+#image {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}

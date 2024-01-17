@@ -1,0 +1,113 @@
+/* Kael Spencer
+1/16/24
+kiyak styles */
+
+:root {
+    /* Creating CSS variables for each link state */
+    --link-color: #3873bc;
+    --visited-color: #00FFD2;
+    --hover-color: #ff8800;
+    --active-color: #00ff15;
+  }
+
+body{
+    background-color: rgb(101, 96, 90);
+  }
+
+#container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 650px;
+    max-width: 1280px;
+    background-color: #ffd;
+    box-shadow: 10px 10px 10px #333;
+    border: 1px solid #003;
+  }
+
+h1,h2,h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+h1 { margin-bottom: 0; }
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 5px;
+  }
+
+#tours ul {
+    list-style-type: disc;
+}
+  
+nav {
+    font-weight: bold;
+    font-size: 1.25em;
+    background-color: #ffd;
+    text-align: center;
+    list-style: none;
+}
+  
+nav a {
+    text-decoration: none;
+  }
+    
+main {
+    background-color: #004d99;
+    background-image: url(heroback2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 2em;
+}
+
+footer {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #ffd;
+    padding: 0.5em;
+  }
+
+a:link {
+    color: var(--link-color);
+  }
+  
+a:visited {
+    color: var(--visited-color);
+  }
+  
+a:hover {
+    color: var(--hover-color);
+  }
+  
+a:active {
+    color: var(--active-color);
+  } 
+  
+
+header{
+    background-color: #003;
+    color: #ffd;
+    background-image: url(headerbackblue.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 2em;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+

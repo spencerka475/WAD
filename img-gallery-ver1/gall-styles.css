@@ -1,0 +1,45 @@
+/* Kael Spencer 
+1/12/24
+gall-index */
+
+
+/* Simple CSS Grid */
+
+/* Image Gallery Effects Project */
+
+
+/* CSS reset rule -- do not delete -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+        justify-content: center; /* Centers gallery horizontally on the page */
+  }
+
+.image-gallery img {
+    width: 200px;
+    height: 100%;
+    margin: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    opacity: 0.8;
+  }
+
+
+figure {
+    margin-bottom: 2.5rem;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+}
