@@ -10,6 +10,10 @@
             --col-count-16: 16;
         }
 
+        body{ background-color: black;}
+
+        h1{color: aliceblue;}
+
         .gallery{
             display: grid;
             grid-template-columns: repeat(--col-count-8, 1fr);
@@ -62,40 +66,88 @@
             grid-row: 2 / 3;
         }
 
+        @media(width <= 850px){
+
+            .gallery{ gap: 10px;}
+            
+        
+        
+        
+        .item1{
+            
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            }
+
+        .item2{
+            
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            }
+
+        .item3{
+            
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            }
+
+        .item4{
+            
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            }
+
+        
+        .item5{
+            
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            }
+
+        .item6{
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+    
+        }
+
+
+
     </style>
 </head>
 <body>
-        <div class="gallery">
+        <h1><u>Favorite films</u></h1>
+            <div class="gallery">
             <figure class="item1">
-                <img src="thing_.jpg" alt="movie poster for the thing">
+                <a href="https://www.youtube.com/watch?v=5ftmr17M-a4"><img src="thing_.jpg" alt="movie poster for the thing"></a>
             </figure>
 
             <figure class="item2">
-                <img src="term.jpg" alt="movie poster for terminator">
+                <a href="https://www.youtube.com/watch?v=CRRlbK5w8AE"><img src="term.jpg" alt="movie poster for terminator"></a>
             </figure>
 
             <figure class="item3">
-                <img src="rambo.jpg" alt="movie poster for first blood">
+                <a href="https://www.youtube.com/watch?v=oXngES_l_HQ"><img src="rambo.jpg" alt="movie poster for first blood"></a>
             </figure>
 
             <figure class="item4">
-                <img src="john-wick_u-L-F7SH250.jpg" alt="movie poster for john wick">
+                <a href="https://www.youtube.com/watch?v=C0BMx-qxsP4"><img src="john-wick_u-L-F7SH250.jpg" alt="movie poster for john wick"></a>
             </figure>
 
             <figure class="item5">
-                <img src="pf.jpg" alt="movie poster for pulp fiction">
+                <a href="https://www.youtube.com/watch?v=tGpTpVyI_OQ"><img src="pf.jpg" alt="movie poster for pulp fiction"></a>
             </figure>
 
             <figure class="item6">
-                <img src="prisoners.jpg" alt="movie poster for prisoners">
+                <a href="https://www.youtube.com/watch?v=doPNgss-ntc"><img src="prisoners.jpg" alt="movie poster for prisoners"></a>
             </figure>
 
             <figure class="item8">
-                <img src="whip.jpg" alt="movie poster for Whiplash">
+                <a href="https://www.youtube.com/watch?v=7d_jQycdQGo"><img src="whip.jpg" alt="movie poster for Whiplash"></a>
             </figure>
 
             <figure class="item9">
-                <img src="shinem.jpg" alt="movie poster for the shining">
+                <a href="https://www.youtube.com/watch?v=f9AAAo0XOkg"><img src="shinem.jpg" alt="movie poster for the shining"></a>
             </figure>
 
 
