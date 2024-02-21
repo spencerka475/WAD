@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starter Template Area Page</title>
+	<style>
+* {
+		/* This is your CSS reset rule */
+		/* Resets to zero any padding or margin your browser applies by default to your page  */
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box; /* Tells browser to 
+	}
+
+	:root {
+		/* Set default/base font size for this page to 16px */
+		font-size: 16px;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 100px);
+
+		/* Organize your template areas below using the grid-template-areas property */
+		grid-template-areas: ;
+
+
+
+
+
+
+		max-width: 75rem;
+		margin: 0 auto; /* Centers container horizontally on the browser window */
+	}
+
+	.item {
+		font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: white;
+		/* rem is short for Root EleMent */
+		padding: 2rem; /* 2rem is equal to 2 X base font size of 16px, i.e., 32px */
+	}
+
+	.content-box1 {
+		background-color: #719da4;
+		/* A short, descriptive name for this grid area might be something like cb1 (short for content-box1) */
+		grid-area: ;
+	}
+	.content-box2 {
+		background-color: #da88da;
+		/* What would be a short, descriptive name you could use for this grid area? */
+		grid-area: ;
+	}
+	.content-box3 {
+		background-color: #35e6d1;
+		/* What would be a short, descriptive name you could use for this grid area? */
+		grid-area: ;
+
+	}
+	.content-box4 {
+		background-color: lime;
+		/* What would be a short, descriptive name you could use for this grid area? */
+		grid-area: ;
+	}
+	</style>
+</head>
+<body>
+	<h1>My Template Area Starter Page</h1>
+
+	<div class="container">
+		<div class="item content-box1">Box One</div>
+		<div class="item content-box2">Box Two</div>
+		<div class="item content-box3">Box Three</div>
+		<div class="item content-box4">Box Four</div>
+
+	</div>
+</body>
+</html>

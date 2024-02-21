@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Station Rotation: Line Numbers Demo</title>
+	<style>
+
+	* {
+		/* This is your CSS reset rule */
+		/* Resets to zero any padding or margin your browser applies by default to your page  */
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	:root {
+		/* Set default/base font size for this page to 16px */
+		font-size: 16px;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 100px);
+
+		max-width: 75rem;
+		margin: 0 auto; /* Centers container horizontally on the browser window */
+	}
+
+	.item {
+		font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: white;
+		/* rem is short for Root EleMent */
+		padding: 2rem; /* 2rem is equal to 2 X base font size of 16px, i.e., 32px */
+	}
+
+	.content-box1 {
+		background-color: #97d4dd;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 4;
+	}
+	.content-box2 {
+		background-color: #35d688;
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	.content-box3 {
+		background-color: #de2bb7;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.content-box4 {
+		background-color: #f1a336;
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item content-box1">Box One</div>
+		<div class="item content-box2">Box Two</div>
+		<div class="item content-box3">Box Three</div>
+		<div class="item content-box4">Box Four</div>
+	</div>
+</body>
+</html>
