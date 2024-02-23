@@ -25,7 +25,10 @@
 		grid-template-rows: repeat(3, 100px);
 
 		/* Organize your template areas below using the grid-template-areas property */
-		grid-template-areas: ;
+		grid-template-areas: 
+			"cb1   cb3    cb2"
+			"cb1   .     cb2"
+			"cb1   cb4   cb4 ";
 
 
 
@@ -48,23 +51,23 @@
 	.content-box1 {
 		background-color: #719da4;
 		/* A short, descriptive name for this grid area might be something like cb1 (short for content-box1) */
-		grid-area: ;
+		grid-area: cb1;
 	}
 	.content-box2 {
 		background-color: #da88da;
 		/* What would be a short, descriptive name you could use for this grid area? */
-		grid-area: ;
+		grid-area: cb2;
 	}
 	.content-box3 {
 		background-color: #35e6d1;
 		/* What would be a short, descriptive name you could use for this grid area? */
-		grid-area: ;
+		grid-area: cb3;
 
 	}
 	.content-box4 {
 		background-color: lime;
 		/* What would be a short, descriptive name you could use for this grid area? */
-		grid-area: ;
+		grid-area: cb4;
 	}
 	</style>
 </head>
