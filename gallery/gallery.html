@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            font-size: 20px;
+        }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "img5 img5 img2 img2"
+            "img6 img6 img3 img3"
+            "img1 img8 img4 img7";
+            gap: 0.5rem; 
+            margin: 0 auto;
+        }
+
+        .img1{
+            grid-area: img1;
+        }
+
+        .img2{
+            grid-area: img2;
+        }
+
+        .img3{
+            grid-area: img3;
+        }
+
+        .img4{
+            grid-area: img4;
+
+        }
+
+        .img5{
+            grid-area: img5;
+        }
+
+        .img6{
+            grid-area: img6;
+        }
+
+        .img7{
+            grid-area:img7 ;
+
+        }
+
+        .img8{
+            grid-area: img8;
+        }
+
+        .gallery img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (width < 768px){
+            .gallery{
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                "img1" 
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img8"
+     
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="climbing-team.jpg" alt="climbers" class="img1">
+        <img src="tatooed.jpg" alt="tatoo"  class="img2">
+        <img src="horizontal2.jpg" alt="mountain" class="img3">
+        <img src="jean-jacket.jpg" alt="jean coat" class="img4">
+
+        <img src="morning-journaling.jpg" alt="writing"class="img5">
+        <img src="infinity-trail.jpg" alt="trail nto distance" class="img6">
+        <img src="backpacker.jpg" alt="backpacking"class="img7">
+        <img src="starbucks.jpg" alt="starbucks" class="img8">
+
+
+    </div>
+</body>
+</html>
