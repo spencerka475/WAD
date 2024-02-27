@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav, aside, p{
+            font-weight: 300;
+            color: #333;
+        }
+        
+        
+        /* 9:03 in video */
+        
+        
+        body{
+            font-family: system-ui, sans-serif;
+            margin:0;
+            padding:0;
+
+            display: grid;
+            height: 100vh;
+            grid-template-areas: 
+            "nav"
+            "header"
+            "content"
+            "side"
+            "footer";
+
+            grid-template-columns:1fr ;
+            grid-template-rows: auto minmax(75px, auto) minmax(75px, auto) auto ;
+        }
+
+        header{
+            grid-area: header;
+            padding: 10rem 0;
+            background: url(iceland-landscape.jpg) ;
+
+            background-size: cover;
+            color: aliceblue;
+            text-align: center;
+            text-shadow: rgba(0, 0, 0, 0.9 ) 1px 1px 20px;
+            
+        }
+
+        header h1{
+            font-weight: 100;
+            font-size: 2rem;
+            letter-spacing: 5px;
+            line-height: 1rem;
+        }
+
+        header p { 
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        h2{
+            font-weight: 100;
+            font-size: 1.7rem;
+            line-height: 1.2;
+        }
+
+        main{
+            grid-area: content;
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 0 1rem;
+
+        }
+
+        aside{
+            grid-area: side;
+
+            border-left: 1px solid #eee;
+        }
+
+        aside > div{
+            width: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        aside img{
+            width: 100%;
+            max-width: 250px;
+        }
+
+        nav{
+            grid-area: nav;
+
+            border-right: 1px solid #eee;
+            padding: 0;
+        }
+
+        nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a{
+            display: block;
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover{
+            background: #efefef;
+        }
+
+        footer{
+            grid-area: footer;
+        
+        
+            background: #000;
+            color: #666;
+            text-align: center;
+            font-size: 0.7rem;
+        }
+
+        @media (min-width: 768px){
+            body{
+                grid-template-areas: 
+                "header header header"
+                "nav content side"
+                "footer footer footer";
+
+                grid-template-columns: 200px 1fr 200px;
+                grid-template-rows: auto 1fr auto;
+            }
+        }
+    
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Epic Trips Co.</h1>
+        <P> Mind Blowing Experinces</P>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+            <li><a href="#">link 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, est sunt reprehenderit ipsam nesciunt natus voluptatibus doloribus exercitationem sed similique?</p>
+    </main>
+
+    <aside>
+        <div>
+            <img src="infinity-trail.jpg" alt="advert">
+        </div>
+    </aside>
+
+    <footer><p>&copy; Kael Spencer company</p></footer>
+</body>
+</html>
