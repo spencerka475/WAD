@@ -5,22 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: #ecf4fb;
+        }
+
         :root{
             font-size: 20px;
         }
 
-        .gallery{
+        .container{
+            width:80%;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, auto);
+
+            grid-template-columns: repeat(auto-fit,minmax(min(250px, 100%),1fr));
+
+            grid-template-rows: repeat(3 , auto);
+
             grid-template-areas: 
             "img5 img5 img2 img2"
-            "img6 img6 img3 img3"
+            "img3 img3 img6 img6"
             "img1 img8 img4 img7";
-            gap: 0.5rem; 
-            margin: 0 auto;
+
+            
+            gap: 5px;
+            margin: 10px auto;
+
         }
 
+        .container img{
+            width: 100%;
+            cursor: pointer;
+            transition: 1s ease;
+
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container img:hover{
+            transform: scale(0.9);
+        }
+
+        
         .img1{
             grid-area: img1;
         }
@@ -55,14 +86,8 @@
             grid-area: img8;
         }
 
-        .gallery img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         @media (width < 768px){
-            .gallery{
+            .container{
                 grid-template-columns: 1fr;
                 grid-template-areas:
                 "img1" 
@@ -78,7 +103,7 @@
     </style>
 </head>
 <body>
-    <div class="gallery">
+    <div class="container">
         <img src="climbing-team.jpg" alt="climbers" class="img1">
         <img src="tatooed.jpg" alt="tatoo"  class="img2">
         <img src="horizontal2.jpg" alt="mountain" class="img3">
@@ -90,6 +115,6 @@
         <img src="starbucks.jpg" alt="starbucks" class="img8">
 
 
-    </div>
+    </div> 
 </body>
 </html>
