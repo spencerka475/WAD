@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "WAD",
+			"path": ".."
+		},
+		{
+			"name": "starter-images",
+			"path": "../../../../Downloads/WAD/starter-images"
+		},
+		{
+			"path": "../../../../Downloads/WAD"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WAD"
+	}
+}
