@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subgrid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        :root{
+            font-size: 16px;
+        }
+
+        body{
+            font-family:  Arial, Helvetica, sans-serif;
+            display: grid;
+            min-height: 100vh;
+            background: #30353b;
+        }
+
+        section{
+            display: grid;
+            grid-row: span 3;
+            grid-template-rows: subgrid;
+            gap: 0;
+        }
+
+        article{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-self: center;
+            gap: 0.8rem;
+            max-width: 80%;
+        }
+
+        h1{
+            font-size: 1.2rem;
+            background: #218bff;
+            color: aliceblue;
+        }
+
+        ul{
+            font-size: 0.8rem;
+            text-shadow: 1px 1px 1px white;
+            color: #746060;
+            background: #f7f7f7;
+        }
+
+        li{
+            margin: 0 0 .2rem 1.4rem;
+        }
+
+        div{
+            background-color: #60af56;
+        }
+
+        h1, div{
+            text-align: center;
+            text-shadow: 1px 1px 1px #636093;
+            color: aliceblue;
+
+        }
+
+        h1, ul, div{
+            padding: 0.8rem;
+        }
+
+        button{
+            margin: 1rem 0;
+            border: 3px solid #549058; 
+            border-radius: 20px;
+            padding: 0.4rem 0.9rem;
+        }
+
+        button:hover{
+            background: black;
+            color: aliceblue;
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+        .note{
+            font-size:0.7rem ;
+        }
+    </style>
+</head>
+<body>
+   <article>
+    <section>
+        <h1>basic housing</h1>
+        <ul>
+            <li>1 domain</li>
+            <li>1 core</li>
+            <li>512 MB memory</li>
+            <li>1 email</li>
+
+
+
+        </ul>
+        <div>
+            <p>free*</p>
+            <button>Sign Up</button>
+            <p class="note"><em>we still want your card details</em></p>
+        </div>
+    </section>
+    <section>
+        <h1>More Advanced Hosting</h1>
+        <ul>
+            <li>4 domains</li>
+            <li>2 cores</li>
+            <li>1gb memory</li>
+            <li>10 email addresses</li>
+            <li>5 mysql databases</li>
+        </ul>
+        <div>
+            <p>$20 / month</p>
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <section>
+        <h1>super hosting</h1>
+        <ul>
+            <li>100 domains</li>
+            <li>4 cores</li>
+            <li>10 gb memory</li>
+            <li>unlimited emails</li>
+            <li>50 mysql databases</li>
+            <li>cpanel included</li>
+        </ul>
+        <div>
+            <p>$100 / mo</p>
+            <button>Sign Up</button>
+        </div>
+    </section>
+   </article>
+</body>
+</html>
