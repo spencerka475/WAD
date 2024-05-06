@@ -3,8 +3,8 @@
 // JS Function Expression Example
 
 
-
-function welcomeUser (fName) {
+// part  1
+const welcomeUser = function (fName) {
     // Welcome the user by their first name
     return `Welcome to Career Tech, ${fName}!`;
 }
@@ -12,7 +12,9 @@ function welcomeUser (fName) {
 const firstName = 'kael';
 alert(welcomeUser(firstName));
 
-function showBiography (fName, lName, userAge) {
+
+//part 2
+const showBiography = function (fName, lName, userAge) {
     // Build a template string containing the user's full name and age
     return `Hello! My name is ${fName} ${lName} and I am ${userAge} years old.`;
 }
